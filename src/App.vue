@@ -1,15 +1,7 @@
 <template>
-  <h1>Aerialoop</h1>
+  <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/upload">Upload</router-link>
+  </div>
+  <router-view />
 </template>
-
-<script>
-
-export default {
-  name: 'App',
-  components: {
-  }
-}
-</script>
-
-<style>
-</style>
