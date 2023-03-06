@@ -38,8 +38,18 @@ export default {
 
 <style>
 .scatters {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px 50px;
+  grid-gap: 1rem;
+}
+@media (max-width: 1199) {
+  .scatters {
+    grid-template-columns: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .scatters {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
